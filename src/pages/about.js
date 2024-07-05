@@ -1,14 +1,13 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Title from "../components/title";
 
-export default function Home() {
+export default function About() {
   return (
     <Layout>
-      <Title text="Welcome" />
+      <Title text="About Me" />
       <div>
-        <Link to="/">Home</Link> | <Link to="/about">About me</Link>
+        <a href="/">Home</a> | <a href="/about">About me</a>
       </div>
       <p>Lorem ipsum etc</p>
     </Layout>
