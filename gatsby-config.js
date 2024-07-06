@@ -8,5 +8,18 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: ["gatsby-plugin-sass"],
+  siteMetadata: {
+    title: "Gatsby blog",
+  },
+  plugins: [
+    "gatsby-plugin-sass",
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "files",
+    //     path: `${__dirname}/src/pages`,
+    //   },
+    // },
+    "gatsby-transformer-remark"
+  ],
 };
